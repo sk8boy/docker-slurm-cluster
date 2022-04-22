@@ -37,3 +37,9 @@ docker exec -it axc-headnode bash
 ```
 
 NOTE: the first running of Slurm might take up to 1 minute because a new MariaDB database initiation procedure is slow a bit.
+
+镜像自动安装openssh-server包，并完成配置。外部使用1022端口，root账号，123456密码可以连接axc-headnode。
+```
+ssh root@localhost -p 1022
+```
+
